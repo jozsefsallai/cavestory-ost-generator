@@ -1,0 +1,29 @@
+{
+  "name": "cs-ost-generator",
+  "description": "Tool to generate custom Cave Story OSTs.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "@jozsefsallai",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "filecompare": "^1.0.4",
+    "fs-extra": "^7.0.1",
+    "lodash.difference": "^4.5.0",
+    "lodash.invert": "^4.3.0",
+    "lodash.mapvalues": "^4.6.0"
+  },
+  "build": {
+    "appId": "me.sallai.cavestory-ost-generator"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "orgs": "wget https://s3-us-west-1.amazonaws.com/sallai/cs_organya.zip && unzip cs_organya.zip -d data/org"
+  },
+  "devDependencies": {
+    "electron": "^4.1.0",
+    "electron-builder": "^20.39.0"
+  }
+}

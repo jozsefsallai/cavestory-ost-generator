@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cave Story OST Generator</title>
+    <link href="../styles/main.css" rel="StyleSheet" type="text/css">
+  </head>
+  <body>
+    <form>
+      <header>
+        <span>Cave Story+ installation path: </span>
+        <label for="installation_path" class="file-picker">Select...</label>
+        <input class="installation-path" type="file" name="installation_path" id="installation_path" webkitdirectory>
+      </header>
+      <section class="tracks">
+        <div class="select-prompt">Please, select the path of your Cave Story+ installation.</div>
+      </section>
+      <footer>
+        <button class="generate-button" type="submit" disabled="disabled">Generate OST</button>
+        <button class="save-button" disabled="disabled">Save Config</button>
+        <button class="load-button" disabled="true">Load Config</button>
+      </footer>
+    </form>
+    <div class="progress">
+      <div class="overlay"></div>
+      <div class="progress-content">
+        <div class="row">
+          <div class="current-task">Processing ...</div>
+          <div class="percentage">0%</div>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+    <script>require('../scripts/main');</script>
+  </body>
+</html>

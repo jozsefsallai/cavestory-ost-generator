@@ -1,0 +1,61 @@
+{
+  "access": "Access",
+  "anzen": "Safety (Sue's Theme)",
+  "balcony": "Balcony",
+  "ballos": "Seal Chamber",
+  "bdown": {
+    "name": "Breakdown",
+    "aliases": [ "breakdown" ]
+  },
+  "cemetery": "Cemetery",
+  "curly": "Plantation",
+  "dr": "Tyrant",
+  "ending": {
+    "name": "The Way Back Home (Credits)",
+    "aliases": [ "credits" ]
+  },
+  "escape": "Run!",
+  "fanfale1": "Got Item!",
+  "fanfale2": "Get Heart Tank!",
+  "fanfale3": "Victory!",
+  "fireeye": "Eyes of Flame",
+  "gameover": "Game Over",
+  "ginsuke": "Balrog's Theme",
+  "grand": "Geothermal",
+  "gravity": "Gravity",
+  "hell": "Running Hell (Curly's Theme)",
+  "ironh": "Oppression",
+  "jenka": "Jenka 1",
+  "jenka2": "Jenka 2",
+  "kaze": {
+    "name": "Wind Fortress",
+    "availableVersions": [ 0, 1 ]
+  },
+  "kodou": "Pulse",
+  "lastbt3": "Last Battle",
+  "lastbtl": "Charge",
+  "lastcave": "Last Cave",
+  "lastcave2": {
+    "name": "Last Cave (Perfect Run)",
+    "availableVersions": [ 0 ]
+  },
+  "marine": "Living Waterway",
+  "maze": "Labyrinth Fight",
+  "mdown2": "Meltdown 2",
+  "mura": "Mimiga Village Theme",
+  "oside": "Moonsong",
+  "plant": "Yamashita",
+  "quiet": "Quiet",
+  "requiem": "Hero's End",
+  "toroko": "Toroko's Theme",
+  "vivi": "Gestation",
+  "wanpak2": "Scorching Back",
+  "wanpaku_ending": {
+    "name": "Mischievous Robot (Ending)",
+    "availableVersions": [ 0 ]
+  },
+  "wanpaku": "Mischievous Robot",
+  "weed": "On to Bushlands",
+  "white": "King's Theme",
+  "zonbie": "Zombie"
+}

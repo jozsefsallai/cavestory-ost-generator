@@ -1,0 +1,217 @@
+@font-face {
+  /* https://fontlibrary.org/en/font/cave-story */
+  font-family: 'Cave Story';
+  src: url('fonts/cavestory.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../resources/bg.png');
+  background-attachment: fixed;
+  font: 16px / 1.6 'Cave Story', 'Segoe UI', sans-serif;
+  color: #fff;
+  letter-spacing: 0.8px;
+  user-select: none;
+}
+
+* {
+  outline: none;
+}
+
+.tracks {
+  padding: 20px 30px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 4px;
+  bottom: 80px;
+  overflow-y: auto;
+}
+
+.tracks .track {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, .2);
+  padding: 10px 15px;
+}
+
+.tracks .track .track-data small {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.tracks .track .track-data em {
+  display: block;
+  font-size: 12px;
+}
+
+.select-prompt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+select {
+  font: 14px 'Cave Story', 'Segoe UI', sans-serif;
+  background: rgba(0, 0, 0, .3);
+  padding: 10px 15px;
+  color: #fff;
+  border: 0;
+}
+
+select option {
+  color: #000;
+}
+
+select option[disabled] {
+  color: #565656;
+}
+
+button, label.file-picker {
+  background: #388E3C;
+  border: 0;
+  padding: 15px 50px;
+  font: 14px 'Cave Story', 'Segoe UI', sans-serif;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover, label.file-picker:hover {
+  background: #66BB6A;
+}
+
+button:focus, button:active, label.file-picker:focus, label.file-picker:active {
+  background: #2E7D32;
+}
+
+button[disabled] {
+  background: gray;
+  cursor: unset;
+}
+
+label.file-picker {
+  padding: 6px 30px;
+  font-size: 12px;
+}
+
+input[type=file] {
+  display: none;
+}
+
+form header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #232323;
+  padding: 10px 15px;
+  z-index: 1000;
+}
+
+form footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px 30px;
+  background: #232323;
+  text-align: center;
+  z-index: 1000;
+}
+
+.progress {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background: rgba(0, 0, 0, .8);
+}
+
+.progress.visible {
+  display: block;
+}
+
+.progress .progress-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.progress .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.progress .progress-bar-container {
+  border: 1px solid #fff;
+  height: 20px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progress .progress-bar-container .progress-bar {
+  height: 20px;
+  width: 0%;
+  border-radius: 50px;
+  background: #fff;
+  transition: width .2s linear;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .8);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, .7);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: rgba(0, 0, 0, .3);
+}
+
+::-webkit-scrollbar-track:active {
+  background: rgba(0, 0, 0, .7);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, .1);
+}
