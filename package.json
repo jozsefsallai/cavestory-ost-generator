@@ -23,7 +23,7 @@
     "orgs": "wget https://s3-us-west-1.amazonaws.com/sallai/cs_organya.zip && unzip cs_organya.zip -d data/org"
   },
   "devDependencies": {
-    "electron": "^7.2.4",
+    "electron": "^9.4.0",
     "electron-builder": "^20.39.0"
   }
 }
